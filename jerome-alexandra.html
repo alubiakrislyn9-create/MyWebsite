@@ -3,22 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jerome & Alexandra | FOLIA</title>
+<title>Jerome & Alexandra Wedding — Antipolo City | FOLIA</title>
+<meta name="description" content="A wedding story documenting the quiet moments, celebration and connection between Jerome and Alexandra. A FOLIA photographic collection from Antipolo City.">
+<meta name="theme-color" content="#19350c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319350c'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f3f1eb' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">FOLIA</a>
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
-    <li><a href="collections.html">Collections</a></li>
+    <li><a href="collections.html" class="active">Collections</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 
 <header class="page-header">
   <div class="label">PHOTOGRAPHIC OBJECT / WEDDING STORY</div>
@@ -30,7 +32,7 @@
     <div class="label">Object Details</div>
     <h2 class="detail-title">Jerome & Alexandra</h2>
     <p class="detail-copy">A wedding story documenting the quiet moments, celebration and connection between Jerome and Alexandra.</p>
-    <p class="detail-copy"><strong>Location:</strong> Antipolo City<br><strong>Format:</strong> Photographic collection<br><strong>Contents:</strong> 12 selected photographs</p>
+    <p class="detail-copy"><strong>Location:</strong> Antipolo City<br><strong>Format:</strong> Photographic collection<br><strong>Contents:</strong> 3 selected photographs</p>
     <a class="back-link" href="collections.html">← Back to Collections</a>
   </div>
   <div class="detail-box">
@@ -39,17 +41,10 @@
   </div>
 </section>
 <main class="page-main">
-  <div class="category-heading"><h2>The Photographs</h2><p>12 frames</p></div>
-  <div class="photo-grid"><div class="photo" onclick="openLightbox('images/wedding1.jpg')"><img src="images/wedding1.jpg" alt="Jerome & Alexandra photograph 1"></div><div class="photo" onclick="openLightbox('images/wedding2.jpg')"><img src="images/wedding2.jpg" alt="Jerome & Alexandra photograph 2"></div><div class="photo" onclick="openLightbox('images/wedding3.jpg')"><img src="images/wedding3.jpg" alt="Jerome & Alexandra photograph 3"></div><div class="photo" onclick="openLightbox('images/wedding4.jpg')"><img src="images/wedding4.jpg" alt="Jerome & Alexandra photograph 4"></div><div class="photo" onclick="openLightbox('images/wedding5.jpg')"><img src="images/wedding5.jpg" alt="Jerome & Alexandra photograph 5"></div><div class="photo" onclick="openLightbox('images/B1 1.jpg')"><img src="images/B1 1.jpg" alt="Jerome & Alexandra photograph 6"></div><div class="photo" onclick="openLightbox('images/B1 2.jpg')"><img src="images/B1 2.jpg" alt="Jerome & Alexandra photograph 7"></div><div class="photo" onclick="openLightbox('images/B1 3.jpg')"><img src="images/B1 3.jpg" alt="Jerome & Alexandra photograph 8"></div><div class="photo" onclick="openLightbox('images/B1 4.jpg')"><img src="images/B1 4.jpg" alt="Jerome & Alexandra photograph 9"></div><div class="photo" onclick="openLightbox('images/B1 5.jpg')"><img src="images/B1 5.jpg" alt="Jerome & Alexandra photograph 10"></div><div class="photo" onclick="openLightbox('images/B1 6.jpg')"><img src="images/B1 6.jpg" alt="Jerome & Alexandra photograph 11"></div><div class="photo" onclick="openLightbox('images/B1 7.jpg')"><img src="images/B1 7.jpg" alt="Jerome & Alexandra photograph 12"></div></div>
+  <div class="category-heading"><h2>The Photographs</h2><p>3 frames</p></div>
+  <div class="photo-grid"><div class="photo" role="button" tabindex="0" data-image="images/jerome-alexandra-1.webp" aria-label="View Jerome & Alexandra photograph 1 larger"><img src="images/jerome-alexandra-1.webp" width="1080" height="1350" alt="Jerome & Alexandra photograph 1" loading="lazy" decoding="async"></div><div class="photo" role="button" tabindex="0" data-image="images/jerome-alexandra-2.webp" aria-label="View Jerome & Alexandra photograph 2 larger"><img src="images/jerome-alexandra-2.webp" width="1080" height="1350" alt="Jerome & Alexandra photograph 2" loading="lazy" decoding="async"></div><div class="photo" role="button" tabindex="0" data-image="images/jerome-alexandra-3.webp" aria-label="View Jerome & Alexandra photograph 3 larger"><img src="images/jerome-alexandra-3.webp" width="1600" height="1067" alt="Jerome & Alexandra photograph 3" loading="lazy" decoding="async"></div></div>
 </main>
-<div class="lightbox" id="lightbox"><span class="close" onclick="closeLightbox()">×</span><img id="lightboxImage" src="" alt="Expanded photograph"></div>
-<script>
-function openLightbox(image){document.getElementById("lightboxImage").src=image;document.getElementById("lightbox").classList.add("active");document.body.style.overflow="hidden"}
-function closeLightbox(){document.getElementById("lightbox").classList.remove("active");document.body.style.overflow=""}
-document.getElementById("lightbox").addEventListener("click",e=>{if(e.target.id==="lightbox")closeLightbox()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLightbox()});
-</script>
-
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded photograph view"><span class="close" onclick="closeLightbox()" role="button" tabindex="0" aria-label="Close expanded photograph" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();closeLightbox();}">×</span><img id="lightboxImage" src="" alt="Expanded photograph"></div>
 
 <footer>
   <p>© 2026 FOLIA — Photography Collection</p>
@@ -59,11 +54,6 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLightbox()});
   </div>
 </footer>
 
-
-<script>
-function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
-</script>
-
+<script src="main.js" defer></script>
 </body>
 </html>

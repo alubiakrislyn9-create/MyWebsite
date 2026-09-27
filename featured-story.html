@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Featured Story | FOLIA</title>
+<title>One Day. Three Moments. — Featured Story | FOLIA</title>
+<meta name="description" content="One Day. Three Moments. — a small visual essay from FOLIA built from three photographs and the quiet feeling that connects them.">
+<meta name="theme-color" content="#19350c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319350c'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f3f1eb' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">FOLIA</a>
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="collections.html">Collections</a></li>
@@ -18,7 +21,6 @@
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 
 <header class="page-header">
   <div class="label">06 / A FOLIA FEATURE</div>
@@ -39,15 +41,15 @@
 <section class="story-gallery">
   <div class="category-heading"><h2>Fragments of a day.</h2><p>Three moments / One memory</p></div>
   <article class="story-photo">
-    <img src="images/H1.jpg" alt="Featured story — the quiet before">
+    <img src="images/feature-1.webp" width="1280" height="1600" alt="Featured story — the quiet before" loading="lazy" decoding="async">
     <div class="story-caption"><span>01 / Before the music</span><strong>The quiet before.</strong></div>
   </article>
   <article class="story-photo">
-    <img src="images/H2.jpg" alt="Featured story — when everything paused">
+    <img src="images/feature-2.webp" width="1080" height="1350" alt="Featured story — when everything paused" loading="lazy" decoding="async">
     <div class="story-caption"><span>02 / When everything paused</span><strong>Somewhere between then and now.</strong></div>
   </article>
   <article class="story-photo">
-    <img src="images/H3.jpg" alt="Featured story — after the yes">
+    <img src="images/feature-3.webp" width="1200" height="1600" alt="Featured story — after the yes" loading="lazy" decoding="async">
     <div class="story-caption"><span>03 / After the yes</span><strong>And then, there was joy.</strong></div>
   </article>
 </section>
@@ -58,7 +60,6 @@
 </section>
 </main>
 
-
 <footer>
   <p>© 2026 FOLIA — Photography Collection</p>
   <div class="socials">
@@ -67,11 +68,6 @@
   </div>
 </footer>
 
-
-<script>
-function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
-</script>
-
+<script src="main.js" defer></script>
 </body>
 </html>

@@ -3,22 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FOLIA | FOLIA</title>
+<title>FOLIA — Wedding Photography Collection & Visual Archive</title>
+<meta name="description" content="FOLIA is a photography archive of wedding stories — browse featured collections, explore the gallery, and read the story behind each frame.">
+<meta name="theme-color" content="#19350c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319350c'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f3f1eb' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">FOLIA</a>
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="collections.html">Collections</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 
 <header class="hero">
   <div class="hero-content">
@@ -38,60 +41,60 @@
   <div class="object-grid">
 <article class="object-card">
   <a href="jerome-alexandra.html" aria-label="Open Jerome & Alexandra collection">
-    <div class="object-image"><img src="images/wedding1.jpg" alt="Jerome & Alexandra photographic collection"></div>
+    <div class="object-image"><img src="images/jerome-alexandra-1.webp" width="1080" height="1350" alt="Jerome & Alexandra photographic collection" loading="lazy" decoding="async"></div>
     <div class="object-info">
       <div><span class="meta">Antipolo City</span><h3>Jerome & Alexandra</h3></div>
-      <span class="card-arrow">→</span>
+      <span class="card-arrow" aria-hidden="true">→</span>
       <p>A wedding story documenting the quiet moments, celebration and connection between Jerome and Alexandra.</p>
     </div>
   </a>
 </article>
 <article class="object-card">
   <a href="anizza-jecel.html" aria-label="Open Anizza & Jecel collection">
-    <div class="object-image"><img src="images/B5 1.jpg" alt="Anizza & Jecel photographic collection"></div>
+    <div class="object-image"><img src="images/anizza-jecel-1.webp" width="1066" height="1600" alt="Anizza & Jecel photographic collection" loading="lazy" decoding="async"></div>
     <div class="object-info">
       <div><span class="meta">Calayan Island</span><h3>Anizza & Jecel</h3></div>
-      <span class="card-arrow">→</span>
+      <span class="card-arrow" aria-hidden="true">→</span>
       <p>A collection from Anizza and Jecel’s wedding story, captured through intimate moments and the atmosphere of Calayan Island.</p>
     </div>
   </a>
 </article>
 <article class="object-card">
   <a href="red-edward.html" aria-label="Open Red & Edward collection">
-    <div class="object-image"><img src="images/wedding6.jpg" alt="Red & Edward photographic collection"></div>
+    <div class="object-image"><img src="images/red-edward-1.webp" width="1600" height="1067" alt="Red & Edward photographic collection" loading="lazy" decoding="async"></div>
     <div class="object-info">
       <div><span class="meta">Batangas</span><h3>Red & Edward</h3></div>
-      <span class="card-arrow">→</span>
+      <span class="card-arrow" aria-hidden="true">→</span>
       <p>A visual collection documenting Red and Edward’s wedding day through candid moments, details and celebration.</p>
     </div>
   </a>
 </article>
 <article class="object-card">
   <a href="rowena-aaron.html" aria-label="Open Rowena & Aaron collection">
-    <div class="object-image"><img src="images/wedding12.jpg" alt="Rowena & Aaron photographic collection"></div>
+    <div class="object-image"><img src="images/rowena-aaron-1.webp" width="1600" height="1067" alt="Rowena & Aaron photographic collection" loading="lazy" decoding="async"></div>
     <div class="object-info">
       <div><span class="meta">Batangas</span><h3>Rowena & Aaron</h3></div>
-      <span class="card-arrow">→</span>
+      <span class="card-arrow" aria-hidden="true">→</span>
       <p>A documentary collection of Rowena and Aaron’s wedding day, focusing on genuine emotion and meaningful details.</p>
     </div>
   </a>
 </article>
 <article class="object-card">
   <a href="juls-shin.html" aria-label="Open Juls & Shin collection">
-    <div class="object-image"><img src="images/wedding18.jpg" alt="Juls & Shin photographic collection"></div>
+    <div class="object-image"><img src="images/juls-shin-1.webp" width="1600" height="1183" alt="Juls & Shin photographic collection" loading="lazy" decoding="async"></div>
     <div class="object-info">
       <div><span class="meta">Baguio</span><h3>Juls & Shin</h3></div>
-      <span class="card-arrow">→</span>
+      <span class="card-arrow" aria-hidden="true">→</span>
       <p>A collection documenting Juls and Shin through natural moments, emotion and the atmosphere of their wedding day.</p>
     </div>
   </a>
 </article>
 <article class="object-card">
   <a href="featured-story.html" aria-label="Open One Day. Three Moments. collection">
-    <div class="object-image"><img src="images/H1.jpg" alt="One Day. Three Moments. photographic collection"></div>
+    <div class="object-image"><img src="images/feature-1.webp" width="1280" height="1600" alt="One Day. Three Moments. photographic collection" loading="lazy" decoding="async"></div>
     <div class="object-info">
       <div><span class="meta">FOLIA Feature</span><h3>One Day. Three Moments.</h3></div>
-      <span class="card-arrow">→</span>
+      <span class="card-arrow" aria-hidden="true">→</span>
       <p>Three photographs, three fragments of a day, held together by feeling rather than sequence.</p>
     </div>
   </a>
@@ -111,7 +114,7 @@
 
 <section class="home-section featured">
   <div class="featured-grid">
-    <div class="featured-image"></div>
+    <div class="featured-image" role="img" aria-label="One Day. Three Moments. featured story image"></div>
     <div class="featured-copy">
       <div class="label">03 / Featured Story</div>
       <h2>One Day.<br><em>Three Moments.</em></h2>
@@ -129,7 +132,6 @@
   <a class="text-link" href="about.html">Discover the idea behind FOLIA →</a>
 </section>
 
-
 <footer>
   <p>© 2026 FOLIA — Photography Collection</p>
   <div class="socials">
@@ -138,11 +140,6 @@
   </div>
 </footer>
 
-
-<script>
-function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
-</script>
-
+<script src="main.js" defer></script>
 </body>
 </html>

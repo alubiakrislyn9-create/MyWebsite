@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Collections | FOLIA</title>
+<title>Collections — Wedding Photography Archive | FOLIA</title>
+<meta name="description" content="Browse the FOLIA archive of wedding photography collections: Jerome & Alexandra, Anizza & Jecel, Red & Edward, Rowena & Aaron, Juls & Shin and more.">
+<meta name="theme-color" content="#19350c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319350c'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f3f1eb' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">FOLIA</a>
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="collections.html" class="active">Collections</a></li>
@@ -18,7 +21,6 @@
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 
 <header class="page-header">
   <div class="label">FOLIA ARCHIVE</div>
@@ -30,10 +32,10 @@
   <div class="archive-grid">
 <article class="archive-card">
 <a href="jerome-alexandra.html">
-  <div class="object-image"><img src="images/wedding1.jpg" alt="Jerome & Alexandra"></div>
+  <div class="object-image"><img src="images/jerome-alexandra-1.webp" width="1080" height="1350" alt="Jerome & Alexandra" loading="lazy" decoding="async"></div>
   <div class="object-info">
     <span class="meta">Antipolo City</span>
-    <h3>Jerome & Alexandra</h3>
+    <h2>Jerome & Alexandra</h2>
     <p>A wedding story documenting the quiet moments, celebration and connection between Jerome and Alexandra.</p>
     <span class="text-link">View object →</span>
   </div>
@@ -41,10 +43,10 @@
 </article>
 <article class="archive-card">
 <a href="anizza-jecel.html">
-  <div class="object-image"><img src="images/B5 1.jpg" alt="Anizza & Jecel"></div>
+  <div class="object-image"><img src="images/anizza-jecel-1.webp" width="1066" height="1600" alt="Anizza & Jecel" loading="lazy" decoding="async"></div>
   <div class="object-info">
     <span class="meta">Calayan Island</span>
-    <h3>Anizza & Jecel</h3>
+    <h2>Anizza & Jecel</h2>
     <p>A collection from Anizza and Jecel’s wedding story, captured through intimate moments and the atmosphere of Calayan Island.</p>
     <span class="text-link">View object →</span>
   </div>
@@ -52,10 +54,10 @@
 </article>
 <article class="archive-card">
 <a href="red-edward.html">
-  <div class="object-image"><img src="images/wedding6.jpg" alt="Red & Edward"></div>
+  <div class="object-image"><img src="images/red-edward-1.webp" width="1600" height="1067" alt="Red & Edward" loading="lazy" decoding="async"></div>
   <div class="object-info">
     <span class="meta">Batangas</span>
-    <h3>Red & Edward</h3>
+    <h2>Red & Edward</h2>
     <p>A visual collection documenting Red and Edward’s wedding day through candid moments, details and celebration.</p>
     <span class="text-link">View object →</span>
   </div>
@@ -63,10 +65,10 @@
 </article>
 <article class="archive-card">
 <a href="rowena-aaron.html">
-  <div class="object-image"><img src="images/wedding12.jpg" alt="Rowena & Aaron"></div>
+  <div class="object-image"><img src="images/rowena-aaron-1.webp" width="1600" height="1067" alt="Rowena & Aaron" loading="lazy" decoding="async"></div>
   <div class="object-info">
     <span class="meta">Batangas</span>
-    <h3>Rowena & Aaron</h3>
+    <h2>Rowena & Aaron</h2>
     <p>A documentary collection of Rowena and Aaron’s wedding day, focusing on genuine emotion and meaningful details.</p>
     <span class="text-link">View object →</span>
   </div>
@@ -74,10 +76,10 @@
 </article>
 <article class="archive-card">
 <a href="juls-shin.html">
-  <div class="object-image"><img src="images/wedding18.jpg" alt="Juls & Shin"></div>
+  <div class="object-image"><img src="images/juls-shin-1.webp" width="1600" height="1183" alt="Juls & Shin" loading="lazy" decoding="async"></div>
   <div class="object-info">
     <span class="meta">Baguio</span>
-    <h3>Juls & Shin</h3>
+    <h2>Juls & Shin</h2>
     <p>A collection documenting Juls and Shin through natural moments, emotion and the atmosphere of their wedding day.</p>
     <span class="text-link">View object →</span>
   </div>
@@ -85,17 +87,17 @@
 </article>
 <article class="archive-card">
 <a href="featured-story.html">
-  <div class="object-image"><img src="images/H1.jpg" alt="One Day. Three Moments."></div>
+  <div class="object-image"><img src="images/feature-1.webp" width="1280" height="1600" alt="One Day. Three Moments." loading="lazy" decoding="async"></div>
   <div class="object-info">
     <span class="meta">FOLIA Feature</span>
-    <h3>One Day. Three Moments.</h3>
+    <h2>One Day. Three Moments.</h2>
     <p>Three photographs, three fragments of a day, held together by feeling rather than sequence.</p>
     <span class="text-link">View object →</span>
   </div>
 </a>
-</article></div>
+</article>
+</div>
 </main>
-
 
 <footer>
   <p>© 2026 FOLIA — Photography Collection</p>
@@ -105,11 +107,6 @@
   </div>
 </footer>
 
-
-<script>
-function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
-</script>
-
+<script src="main.js" defer></script>
 </body>
 </html>

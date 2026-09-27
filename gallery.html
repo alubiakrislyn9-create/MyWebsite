@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery | FOLIA</title>
+<title>Gallery — Visual Index of Wedding Stories | FOLIA</title>
+<meta name="description" content="A quick visual index of every wedding story in the FOLIA photography archive. Open any collection to explore its complete set of photographs.">
+<meta name="theme-color" content="#19350c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319350c'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' fill='%23f3f1eb' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">FOLIA</a>
-  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="collections.html">Collections</a></li>
@@ -18,7 +21,6 @@
     <li><a href="about.html">About</a></li>
   </ul>
 </nav>
-
 
 <header class="page-header">
   <div class="label">VISUAL INDEX</div>
@@ -28,18 +30,18 @@
 <main class="page-main">
   <div class="category-heading"><h2>Selected Frames</h2><p>From the archive</p></div>
   <div class="photo-grid">
-<a class="photo" href="jerome-alexandra.html"><img src="images/wedding1.jpg" alt="Jerome & Alexandra — selected photograph"></a>
-<a class="photo" href="jerome-alexandra.html"><img src="images/wedding2.jpg" alt="Jerome & Alexandra — selected photograph"></a>
-<a class="photo" href="anizza-jecel.html"><img src="images/B5 1.jpg" alt="Anizza & Jecel — selected photograph"></a>
-<a class="photo" href="anizza-jecel.html"><img src="images/B5 2.jpg" alt="Anizza & Jecel — selected photograph"></a>
-<a class="photo" href="red-edward.html"><img src="images/wedding6.jpg" alt="Red & Edward — selected photograph"></a>
-<a class="photo" href="red-edward.html"><img src="images/wedding7.jpg" alt="Red & Edward — selected photograph"></a>
-<a class="photo" href="rowena-aaron.html"><img src="images/wedding12.jpg" alt="Rowena & Aaron — selected photograph"></a>
-<a class="photo" href="rowena-aaron.html"><img src="images/wedding13.jpg" alt="Rowena & Aaron — selected photograph"></a>
-<a class="photo" href="juls-shin.html"><img src="images/wedding18.jpg" alt="Juls & Shin — selected photograph"></a>
-<a class="photo" href="juls-shin.html"><img src="images/wedding19.jpg" alt="Juls & Shin — selected photograph"></a>
-<a class="photo" href="featured-story.html"><img src="images/H1.jpg" alt="One Day. Three Moments. — selected photograph"></a>
-<a class="photo" href="featured-story.html"><img src="images/H2.jpg" alt="One Day. Three Moments. — selected photograph"></a>
+<a class="photo" href="jerome-alexandra.html"><img src="images/jerome-alexandra-1.webp" width="1080" height="1350" alt="Jerome & Alexandra — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="jerome-alexandra.html"><img src="images/jerome-alexandra-2.webp" width="1080" height="1350" alt="Jerome & Alexandra — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="anizza-jecel.html"><img src="images/anizza-jecel-1.webp" width="1066" height="1600" alt="Anizza & Jecel — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="anizza-jecel.html"><img src="images/anizza-jecel-2.webp" width="1143" height="1600" alt="Anizza & Jecel — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="red-edward.html"><img src="images/red-edward-1.webp" width="1600" height="1067" alt="Red & Edward — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="red-edward.html"><img src="images/red-edward-2.webp" width="1600" height="1067" alt="Red & Edward — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="rowena-aaron.html"><img src="images/rowena-aaron-1.webp" width="1600" height="1067" alt="Rowena & Aaron — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="rowena-aaron.html"><img src="images/rowena-aaron-2.webp" width="1232" height="1600" alt="Rowena & Aaron — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="juls-shin.html"><img src="images/juls-shin-1.webp" width="1600" height="1183" alt="Juls & Shin — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="juls-shin.html"><img src="images/juls-shin-2.webp" width="1390" height="1600" alt="Juls & Shin — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="featured-story.html"><img src="images/feature-1.webp" width="1280" height="1600" alt="One Day. Three Moments. — selected photograph" loading="lazy" decoding="async"></a>
+<a class="photo" href="featured-story.html"><img src="images/feature-2.webp" width="1080" height="1350" alt="One Day. Three Moments. — selected photograph" loading="lazy" decoding="async"></a>
 </div></main>
 
 <footer>
@@ -50,11 +52,6 @@
   </div>
 </footer>
 
-
-<script>
-function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
-</script>
-
+<script src="main.js" defer></script>
 </body>
 </html>
