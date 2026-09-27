@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | FOLIA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">FOLIA</a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<header class="page-header">
+  <div class="label">VISUAL INDEX</div>
+  <h1>Gallery</h1>
+  <p>A quick visual index of the stories in the FOLIA archive. Open any collection to explore its complete set.</p>
+</header>
+<main class="page-main">
+  <div class="category-heading"><h2>Selected Frames</h2><p>From the archive</p></div>
+  <div class="photo-grid">
+<a class="photo" href="jerome-alexandra.html"><img src="images/wedding1.jpg" alt="Jerome & Alexandra — selected photograph"></a>
+<a class="photo" href="jerome-alexandra.html"><img src="images/wedding2.jpg" alt="Jerome & Alexandra — selected photograph"></a>
+<a class="photo" href="anizza-jecel.html"><img src="images/B5 1.jpg" alt="Anizza & Jecel — selected photograph"></a>
+<a class="photo" href="anizza-jecel.html"><img src="images/B5 2.jpg" alt="Anizza & Jecel — selected photograph"></a>
+<a class="photo" href="red-edward.html"><img src="images/wedding6.jpg" alt="Red & Edward — selected photograph"></a>
+<a class="photo" href="red-edward.html"><img src="images/wedding7.jpg" alt="Red & Edward — selected photograph"></a>
+<a class="photo" href="rowena-aaron.html"><img src="images/wedding12.jpg" alt="Rowena & Aaron — selected photograph"></a>
+<a class="photo" href="rowena-aaron.html"><img src="images/wedding13.jpg" alt="Rowena & Aaron — selected photograph"></a>
+<a class="photo" href="juls-shin.html"><img src="images/wedding18.jpg" alt="Juls & Shin — selected photograph"></a>
+<a class="photo" href="juls-shin.html"><img src="images/wedding19.jpg" alt="Juls & Shin — selected photograph"></a>
+<a class="photo" href="featured-story.html"><img src="images/H1.jpg" alt="One Day. Three Moments. — selected photograph"></a>
+<a class="photo" href="featured-story.html"><img src="images/H2.jpg" alt="One Day. Three Moments. — selected photograph"></a>
+</div></main>
+
+<footer>
+  <p>© 2026 FOLIA — Photography Collection</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/krisalubia/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61570940212125" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+
+<script>
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
+</script>
+
+</body>
+</html>

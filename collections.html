@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections | FOLIA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">FOLIA</a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html" class="active">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<header class="page-header">
+  <div class="label">FOLIA ARCHIVE</div>
+  <h1>Collections</h1>
+  <p>Six photographic objects, each with its own details, images and dedicated story page.</p>
+</header>
+<main class="page-main">
+  <p class="collection-intro">The FOLIA collection is arranged as an archive of visual stories. Each entry can be opened independently, just like an individual object in a catalogue.</p>
+  <div class="archive-grid">
+<article class="archive-card">
+<a href="jerome-alexandra.html">
+  <div class="object-image"><img src="images/wedding1.jpg" alt="Jerome & Alexandra"></div>
+  <div class="object-info">
+    <span class="meta">Antipolo City</span>
+    <h3>Jerome & Alexandra</h3>
+    <p>A wedding story documenting the quiet moments, celebration and connection between Jerome and Alexandra.</p>
+    <span class="text-link">View object →</span>
+  </div>
+</a>
+</article>
+<article class="archive-card">
+<a href="anizza-jecel.html">
+  <div class="object-image"><img src="images/B5 1.jpg" alt="Anizza & Jecel"></div>
+  <div class="object-info">
+    <span class="meta">Calayan Island</span>
+    <h3>Anizza & Jecel</h3>
+    <p>A collection from Anizza and Jecel’s wedding story, captured through intimate moments and the atmosphere of Calayan Island.</p>
+    <span class="text-link">View object →</span>
+  </div>
+</a>
+</article>
+<article class="archive-card">
+<a href="red-edward.html">
+  <div class="object-image"><img src="images/wedding6.jpg" alt="Red & Edward"></div>
+  <div class="object-info">
+    <span class="meta">Batangas</span>
+    <h3>Red & Edward</h3>
+    <p>A visual collection documenting Red and Edward’s wedding day through candid moments, details and celebration.</p>
+    <span class="text-link">View object →</span>
+  </div>
+</a>
+</article>
+<article class="archive-card">
+<a href="rowena-aaron.html">
+  <div class="object-image"><img src="images/wedding12.jpg" alt="Rowena & Aaron"></div>
+  <div class="object-info">
+    <span class="meta">Batangas</span>
+    <h3>Rowena & Aaron</h3>
+    <p>A documentary collection of Rowena and Aaron’s wedding day, focusing on genuine emotion and meaningful details.</p>
+    <span class="text-link">View object →</span>
+  </div>
+</a>
+</article>
+<article class="archive-card">
+<a href="juls-shin.html">
+  <div class="object-image"><img src="images/wedding18.jpg" alt="Juls & Shin"></div>
+  <div class="object-info">
+    <span class="meta">Baguio</span>
+    <h3>Juls & Shin</h3>
+    <p>A collection documenting Juls and Shin through natural moments, emotion and the atmosphere of their wedding day.</p>
+    <span class="text-link">View object →</span>
+  </div>
+</a>
+</article>
+<article class="archive-card">
+<a href="featured-story.html">
+  <div class="object-image"><img src="images/H1.jpg" alt="One Day. Three Moments."></div>
+  <div class="object-info">
+    <span class="meta">FOLIA Feature</span>
+    <h3>One Day. Three Moments.</h3>
+    <p>Three photographs, three fragments of a day, held together by feeling rather than sequence.</p>
+    <span class="text-link">View object →</span>
+  </div>
+</a>
+</article></div>
+</main>
+
+
+<footer>
+  <p>© 2026 FOLIA — Photography Collection</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/krisalubia/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61570940212125" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+
+<script>
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
+</script>
+
+</body>
+</html>

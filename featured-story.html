@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Story | FOLIA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">FOLIA</a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<header class="page-header">
+  <div class="label">06 / A FOLIA FEATURE</div>
+  <h1>One Day.<br>Three Moments.</h1>
+  <p>Three photographs, three fragments of a day, held together by feeling rather than sequence.</p>
+</header>
+<main class="feature-story">
+<section class="story-intro">
+  <div class="story-intro-grid">
+    <div><div class="label">The Day Between Moments</div><h2>The quiet<br><em>between</em><br>frames.</h2></div>
+    <div class="story-copy">
+      <p class="lead">Some days are remembered for the big moment. Others stay with us because of everything that happened around it.</p>
+      <p>The quiet glance before the music begins. A hand reaching for another hand. The laughter that arrives unexpectedly. The little pauses no one planned for, but somehow become the moments that stay.</p>
+      <p>This feature is a small visual essay built from three photographs. There is no strict beginning, middle or end — only three fragments connected by feeling.</p>
+    </div>
+  </div>
+</section>
+<section class="story-gallery">
+  <div class="category-heading"><h2>Fragments of a day.</h2><p>Three moments / One memory</p></div>
+  <article class="story-photo">
+    <img src="images/H1.jpg" alt="Featured story — the quiet before">
+    <div class="story-caption"><span>01 / Before the music</span><strong>The quiet before.</strong></div>
+  </article>
+  <article class="story-photo">
+    <img src="images/H2.jpg" alt="Featured story — when everything paused">
+    <div class="story-caption"><span>02 / When everything paused</span><strong>Somewhere between then and now.</strong></div>
+  </article>
+  <article class="story-photo">
+    <img src="images/H3.jpg" alt="Featured story — after the yes">
+    <div class="story-caption"><span>03 / After the yes</span><strong>And then, there was joy.</strong></div>
+  </article>
+</section>
+<section class="story-ending">
+  <h2>Keep the feeling.<br><em>Keep the frame.</em></h2>
+  <p>FOLIA is an archive of moments that deserve to be revisited slowly. This is one of them.</p>
+  <a class="back-link" href="collections.html">← Back to Collections</a>
+</section>
+</main>
+
+
+<footer>
+  <p>© 2026 FOLIA — Photography Collection</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/krisalubia/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61570940212125" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+
+<script>
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
+</script>
+
+</body>
+</html>

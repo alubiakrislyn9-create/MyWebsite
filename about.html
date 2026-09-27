@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | FOLIA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">FOLIA</a>
+  <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+  </ul>
+</nav>
+
+
+<header class="page-header">
+  <div class="label">ABOUT FOLIA</div>
+  <h1>Why photographs<br>become memories.</h1>
+  <p>FOLIA is a visual collection built around the idea that every photograph carries more than what appears inside its frame.</p>
+</header>
+<main class="page-main">
+  <div class="about-layout">
+    <div class="about-image"><img src="images/about1.jpg" alt="FOLIA photographic work"></div>
+    <div class="about-copy">
+      <div class="label">The philosophy</div>
+      <h2>Look closer.<br><em>Stay longer.</em></h2>
+      <p>FOLIA began with a fascination for the moments that happen naturally — the glance before a smile, the movement between poses, the quiet details around a celebration.</p>
+      <p>Instead of treating photographs as isolated files, FOLIA presents them as collections. A collection has a title, a place, a description and a visual record. Together, those details turn an image into an object that can be explored.</p>
+      <p>The result is a simple digital archive: browse, choose a story, open its dedicated page, and move through the photographs one frame at a time.</p>
+      <div class="about-note">“We don't remember every moment. We remember how they felt.”</div>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <p>© 2026 FOLIA — Photography Collection</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/krisalubia/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61570940212125" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+
+<script>
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
+</script>
+
+</body>
+</html>
